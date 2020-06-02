@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>hall Locator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://kit.fontawesome.com/c939d0e917.js" type="text/javascript"></script>
+	<script src="data.js" type="text/javascript" ></script>
 </head>
 <body>
 
+
+<div class="title-container">
+	<div class="futo-logo"><!-- <img src="https://upload.wikimedia.org/wikipedia/en/1/16/FUTO_logo.png"> --></div>
+	<div class="title">hall Locator</div>
+</div>
+
+
+<div class="search-container">
+	<div class="search">
+		<input id="zip-code-input" type="text" name="" placeholder="Enter Zip ">
+		<i onclick="searchhalls()" class="fas fa-search"></i>
+	</div>
+	
+</div>
+
+<div class="hall-list-container">
+	
+		<div class="hall-list">
+	<!-- 		<div class="hall">
+				
+				<div class="hall-info-container">
+					<div class="hall-address">
+						<p><span>Rm 18 Precious Lodge</span><span>Eziobodo Owerri</span></p>
+						 
+						
+					</div>
+					<div class="hall-phone-number">
+						<p>09055808223</p>
+					
+					</div>
+				</div>
+				<div class='hall-num'>
+					<div class="circle">2</div>
+				</div>
+				
+			</div>
+			 -->
+		</div>
+			
+		
+
+	
+</div>
+
+<div class="footer">
+	<p>Created by JeremAIh & Ike</p>
+</div>
+
+<div id="map"></div>
+
+
+
+<script src="index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap"
+    async defer></script>
 </body>
 </html>
