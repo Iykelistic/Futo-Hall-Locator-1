@@ -1,247 +1,215 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-#map{
-
-	width: 100%;
-    height: 100vh;
-
+#map {
+  width: 100%;
+  height: 100vh;
 }
-
-
 
 .title {
-    position: absolute;
-	left: 100px;
-    top: 100px;
-    z-index: 10;
-    font-size: 80px;
-    font-weight: bold;
-    text-transform: uppercase;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 10;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: cursive;
 }
 
-
 .search-container {
-    width: 300px;
-    height: 50px;
-    background-color: #4f4f56;
-    position: absolute;
-    z-index: 10;
-    top: 200px;
-    left: 150px;
-    border-radius: 30px;
+  width: 300px;
+  height: 50px;
+  background-color: #4f4f56;
+  position: absolute;
+  z-index: 10;
+  top: 200px;
+  left: 150px;
+  border-radius: 30px;
 }
 
 .search {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    width: 100%;}
-
-
-.search input{
-	align-items: center;
-    width: 100%;
-    font-size: 30px;
-    background-color: transparent;
-    padding-left: 20px;
-    outline: none;
-    border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-
-
-
-
-.hall-list-container{
-    width: 300px;
-    background-color: white;
-    position: absolute;
-    z-index: 10;
-    border-radius: 20px;
-    top: 270px;
-    left: 150px;
-    display: flex;
-   
-    bottom: 0px;
+.search input {
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  background-color: transparent;
+  padding-left: 20px;
+  outline: none;
+  border: none;
 }
 
+.hall-list-container {
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  border-radius: 20px;
+  top: 270px;
+  left: 150px;
+  display: flex;
 
-.hall-list{
-	width: 100%;
-    padding: 10px;
-    overflow-y: scroll;
+  bottom: 25px;
 }
 
-
-
-
-
-
-
-
-
-.search i{
-	color: white;
+.hall-list {
+  width: 100%;
+  padding: 10px;
+  overflow-y: scroll;
 }
 
+.search i {
+  color: white;
+}
 
 .fas {
-    font-weight: 900;
-    padding-right: 20px;
-    font-size: 25px;
+  font-weight: 900;
+  padding-right: 20px;
+  font-size: 25px;
 }
 
-.hall{
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #979797;
-    padding: 10px;
-    transition: all 1s ease;
+.hall {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #979797;
+  padding: 10px;
+  transition: all 1s ease;
 }
-.hall:hover{
-    background-color: lightblue;
-    border-radius: 10px;
-
-}
-
-.hall-info-container{
-    flex-grow: 1;
-    cursor: pointer;
+.hall:hover {
+  background-color: lightblue;
+  border-radius: 10px;
 }
 
-
-.hall-address{
-    font-size: 21px;
+.hall-info-container {
+  flex-grow: 1;
+  cursor: pointer;
 }
 
-.hall-address span{
-    display: block;
+.hall-address {
+  font-size: 21px;
 }
 
-.hall-phone-number{
-    color: #b5adad;
+.hall-address span {
+  display: block;
 }
 
-.hall-num{
-    align-items: center;
-    display: flex;
+.hall-phone-number {
+  color: #b5adad;
 }
 
-.circle{
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    background-color: #454e53;
-    text-align: center;
-    align-items: center;
-    color: white;
-    font-size: 25px;
+.hall-num {
+  align-items: center;
+  display: flex;
 }
 
-
-.info-window{
-    height: 80px;;
-    width: 200px;
-    background-color: #f7f3f3;
-    border-radius: 10px;
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #454e53;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
 }
 
-.info-window span{
-    display: block;
+.info-window {
+  height: 80px;
+  width: 200px;
+  background-color: #f7f3f3;
+  border-radius: 10px;
 }
 
-
-
-.info-window{
-    min-width: 300px;
-    font-size: 17px;
-    padding: 8px;
-    background-color: lightblue;
-    font-family: monospace;
-    overflow-y: scroll;
+.info-window span {
+  display: block;
 }
 
-.info-name{
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000a3;
+.info-window {
+  min-width: 300px;
+  font-size: 17px;
+  padding: 8px;
+  background-color: lightblue;
+  font-family: monospace;
+  overflow-y: scroll;
 }
 
-.info-status{
-    margin-top: 10px;
-    border-bottom: 1px solid #00001029;
-    padding-bottom: 6px;
+.info-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000a3;
 }
 
-.info-address{
-    margin-top: 8px;
-    display: flex;
+.info-status {
+  margin-top: 10px;
+  border-bottom: 1px solid #00001029;
+  padding-bottom: 6px;
 }
 
-.info-phone{
-        margin-top: 8px;
-        display: flex;
+.info-address {
+  margin-top: 8px;
+  display: flex;
 }
 
-
-.circle1{
-    margin-right: 8px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #fdfeff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.info-phone {
+  margin-top: 8px;
+  display: flex;
 }
 
+.circle1 {
+  margin-right: 8px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fdfeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.circle .fas{
-    padding-right: 0px; 
-    z-index: 10;
-} 
-
-
-
+.circle .fas {
+  padding-right: 0px;
+  z-index: 10;
+}
 
 .futo-logo {
-    height: 80px;
-    position: absolute;
-    top: 100px;
-    left: 10px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/en/1/16/FUTO_logo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/1/16/FUTO_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  z-index: 10;
 }
-
 
 .footer {
-    right: 5px;
-    position: absolute;
-    bottom: 0px;
-    background-color: lightblue;
-    border-radius: 10px;
-    border: 1px solid #03A9F4;
-    width: 100%;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 50px;
+  right: 5px;
+  position: absolute;
+  bottom: 0px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px solid #03a9f4;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
 }
 
-
-.footer p{
-    font-family: monospace;
-    font-size: 15px;
-    font-weight: bold;
+.footer p {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
 }
-
-
-

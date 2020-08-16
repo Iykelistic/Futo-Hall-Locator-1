@@ -1,15 +1,18 @@
 // It should be noted that this is just dummy data for now
 
-halls=[
-{
-	name:'Senate Building',
-	location:{longitude:21.4, latitude:45.32},
-	img_url='hall images/senate.jpg',
-
-},
-{
-	name:'Access Bank',
-	location:{longitude:21.4, latitude:45.32},
-	img_url='hall images/access.jpg',
-}
-]
+let halls = [
+  {
+    name: "Senate Building",
+    coordinates: { latitude: 5.392804, longitude: 6.986247 },
+    img_url: "hall images/senate.jpg",
+    phoneNumber: 0987654098,
+    addressLines: ["qwer gfd", "gfdsaz trew"],
+  },
+  {
+    name: "Access Bank",
+    coordinates: { latitude: 5.3914571, longitude: 6.9838818 },
+    img_url: "hall images/access.jpg",
+    phoneNumber: 0987654098,
+    addressLines: ["qwer gfd", "gfdsaz trew"],
+  },
+];
