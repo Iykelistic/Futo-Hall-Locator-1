@@ -1,8 +1,49 @@
+/* scroll styles end here*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* scroll styles end here  */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: monospace;
+}
+
+.dark {
+  background-color: #242f3e !important;
+  color: #b5adad !important;
+}
+.hall-list-dark {
+  background-color: #38414e !important;
+}
+
+.hall-list-dark .hall:hover {
+  background-color: rgb(91 101 115);
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
 }
 
 #map {
@@ -18,7 +59,40 @@ body {
   font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: cursive;
+}
+
+.mode {
+  font-weight: bold;
+  position: fixed;
+  top: 0.5em;
+  right: 0px;
+  z-index: 10;
+  background-color: white;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16),
+    0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+}
+.mode:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+.fa-adjust,
+.fa-sun {
+  padding-right: 0px !important;
+  padding-left: 2px;
+}
+
+.fa-sun {
+  color: gold;
 }
 
 .search-container {
@@ -58,7 +132,7 @@ body {
   top: 270px;
   left: 150px;
   display: flex;
-
+  height: 50%;
   bottom: 25px;
 }
 
@@ -78,6 +152,10 @@ body {
   font-size: 25px;
 }
 
+.circle1 .fas {
+  padding-right: 0;
+}
+
 .hall {
   display: flex;
   flex-direction: row;
@@ -86,7 +164,7 @@ body {
   transition: all 1s ease;
 }
 .hall:hover {
-  background-color: lightblue;
+  background-color: whitesmoke;
   border-radius: 10px;
 }
 
@@ -97,10 +175,6 @@ body {
 
 .hall-address {
   font-size: 21px;
-}
-
-.hall-address span {
-  display: block;
 }
 
 .hall-phone-number {
@@ -124,29 +198,27 @@ body {
 }
 
 .info-window {
-  height: 80px;
   width: 200px;
-  background-color: #f7f3f3;
+  background-color: whitesmoke;
   border-radius: 10px;
+  min-width: 300px;
+  font-size: 17px;
+  padding: 8px;
 }
 
 .info-window span {
   display: block;
 }
 
-.info-window {
-  min-width: 300px;
-  font-size: 17px;
-  padding: 8px;
-  background-color: lightblue;
-  font-family: monospace;
-  overflow-y: scroll;
-}
-
 .info-name {
   font-size: 24px;
   font-weight: bold;
   color: #000000a3;
+  border-bottom: 2px dashed;
+  margin-bottom: 0.3em;
+}
+.info-img img {
+  border-radius: 5px;
 }
 
 .info-status {
@@ -183,33 +255,21 @@ body {
 
 .futo-logo {
   height: 80px;
+  width: 80px;
   position: absolute;
   top: 100px;
   left: 10px;
   background-image: url("https://upload.wikimedia.org/wikipedia/en/1/16/FUTO_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 80px;
   z-index: 10;
 }
 
-.footer {
-  right: 5px;
-  position: absolute;
-  bottom: 0px;
-  background-color: lightblue;
-  border-radius: 10px;
-  border: 1px solid #03a9f4;
-  width: 100%;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 50px;
-}
-
-.footer p {
-  font-family: monospace;
-  font-size: 15px;
+marquee {
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
   font-weight: bold;
+  font-size: 0.9em;
+  z-index: 10;
 }

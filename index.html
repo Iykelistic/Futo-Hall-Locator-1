@@ -14,6 +14,7 @@
       <div class="futo-logo"></div>
       <div class="title">hall Locator</div>
     </div>
+    <div class="mode">Dark Mode <i class="fas fa-adjust"></i></div>
 
     <div class="search-container">
       <div class="search">
@@ -21,43 +22,25 @@
           id="zip-code-input"
           type="text"
           name=""
-          placeholder="Enter Zip "
+          placeholder="search ... "
+          onkeydown="searchhalls()"
         />
         <i onclick="searchhalls()" class="fas fa-search"></i>
       </div>
     </div>
 
     <div class="hall-list-container">
-      <div class="hall-list">
-        <!-- 		<div class="hall">
-				
-				<div class="hall-info-container">
-					<div class="hall-address">
-						<p><span>Rm 18 Precious Lodge</span><span>Eziobodo Owerri</span></p>
-						 
-						
-					</div>
-					<div class="hall-phone-number">
-						<p>09055808223</p>
-					
-					</div>
-				</div>
-				<div class='hall-num'>
-					<div class="circle">2</div>
-				</div>
-				
-			</div>
-			 -->
-      </div>
+      <div class="hall-list"></div>
     </div>
 
-    <div class="footer">
-      <marquee style="position: fixed; bottom: 0px; left: 0px;"
-        >Made with
-        <i style="color: red;" class="fa fa-heart" aria-hidden="true"></i> by
-        JeremAIh
-      </marquee>
-    </div>
+    <marquee
+      class="footer"
+      style="position: fixed; bottom: 0px; left: 0px; font-size: 1.1em;"
+      >Made with
+      <i style="color: blue;" class="fa fa-code" aria-hidden="true"></i> and
+      <i style="color: red;" class="fa fa-heart" aria-hidden="true"></i> by
+      JeremAIh
+    </marquee>
 
     <div id="map"></div>
 
