@@ -24,7 +24,10 @@ Do well to open an issue, PR or shoot me an email at esiebomaj@gmail.com
 
 ## CONTRIBUTORS
 
-Esieboma Jeremiah.
-
-Madubuike Ikechukwu
-
+<table>
+  <tr>
+<td align="center"><a href="https://esiebomaj.github.io"><img src="https://avatars2.githubusercontent.com/u/57163971?s=460&u=e358bb013fcd8ebb0c0ec3000b8d47bad6a5c789&v=4" width="100px;" alt="Esieboma Jeremiah"/><br /><sub><b>Esieboma Jeremiah</b></sub></a><br /><a title="Code">💻</a></td>
+    
+<td align="center"><a href="https://iykelistic.github.io/"><img src="https://avatars0.githubusercontent.com/u/40811429?s=460&u=630c7699340a5478acdbd9f80c3b43ea6310d16b&v=4" width="100px;" alt="Madubuike Ikechukwu"/><br /><sub><b>Madubuike Ikechukwu</b></sub></a><br /><a title="Code">💻</a></td>
+</tr>
+<table/>
