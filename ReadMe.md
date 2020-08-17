@@ -1,3 +1,4 @@
+![icon](https://user-images.githubusercontent.com/57163971/90450096-bdcf5880-e0e0-11ea-8e4e-2f700129a06f.png) 
 # Federal University of Technology Owerri (FUTO) Hall locator
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
